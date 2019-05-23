@@ -14,6 +14,35 @@ h2 {
   font-size: 32px;
 }
 
+h2 + .user_review {
+  border: solid 1px black;
+
+}
+input, select, button {
+  cursor: pointer; 
+  outline: none;
+
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  background-image: url(./stars.png);
+  height: 30px;
+  width: 30px;
+
+}
+
+input[type="radio"]:hover {
+  background-position-y: -30px;
+  background-position-x: -30px;
+}
+input[type="radio"]:checked {
+  background-position-y: -60px;
+  background-position-x: -60px;
+}
+form input:last-child {
+  background-color: gold;
+
+}
 /* This selector selects ALL anchor tag children of ALL list elements that
 are children of an Unordered List element */
 ul li a {
@@ -37,7 +66,9 @@ header > img {
 ol {
   list-style: upper-roman inside;
 }
-
+ol li:nth-of-type(2n) {
+  background-color:lightgrey; 
+}
 .user_review h4 {
   font-size: 18px;
   font-weight: bold;
